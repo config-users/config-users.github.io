@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="./libs/scrollReveal/scrollreveal.min.js"></script>
+
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./libs/glide/glide.core.min.css">
+  <link rel="stylesheet" href="./libs/glide/glide.theme.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./respond.css">
+
+  <title>融晟科技 - 创新型互联网技术企业</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="logo">融晟科技</div>
+
+    <nav>
+      <a href="#home">首页</a>
+      <a href="#about_us">关于我们</a>
+      <!-- <a href="#showcases">成功案例</a> -->
+      <a href="#service">服务流程</a>
+      <!-- <a href="#team_intro">团队介绍</a> -->
+      <a href="#company_activities">公司动态</a>
+      <i class="fas fa-search"></i>
+    </nav>
+
+    <!-- 折叠按钮 -->
+    <div class="collapse">
+      <div class="collapse_line"></div>
+      <div class="collapse_line2"></div>
+      <div class="collapse_line3"></div>
+    </div>
+  </header>
+
+  <!-- 首页图片轮播，使用glide JS插件 类名固定-->
+  <div class="glide" id="home">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+        <div class="glide__slide">
+          <div class="slide_caption">
+            <h1>融合科技智慧，领航自动化新程。</h1>
+            <h3>
+              深耕 RPA 机器人流程自动化领域，以专业咨询与实施服务，推动企业流程自动化升级，让科技融合智慧力量，赋能每一份自动化理想。
+            </h3>
+            <button class="explore_btn">探索更多</button>
+          </div>
+          <!-- 蒙层 -->
+          <div class="backdrop"></div>
+          <img src="images/watercrafts-on-river-3464632.jpg" alt="">
+        </div>
+
+        <div class="glide__slide">
+          <div class="slide_caption left">
+            <h1>RPA 赋能，智领自动化新未来。</h1>
+            <h3>
+              专注机器人流程自动化（RPA）技术咨询与实施，以专业服务助力企业流程高效革新。深耕 RPA 领域创新，将科技与智慧深度融合，为企业注入自动化核心动能，重塑运营效率标杆，强势引领自动化未来发展新方向。
+            </h3>
+            <button class="explore_btn">探索更多</button>
+          </div>
+          <!-- 蒙层 -->
+          <div class="backdrop"></div>
+          <!-- 
+            muted：静音（浏览器控制的必须设置静音才能自动播放）
+            autoplay：自动播放
+            loop：循环播放
+          -->
+          <img src="images/R-C.jpg" muted autoplay loop></img>
+        </div>
+      </div>
+    </div>
+
+    <!-- 滑动轮播按钮 -->
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        <
+      </button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        >
+      </button>
+    </div>
+
+    <!-- 圆点轮播按钮
+      =0：点击跳转第一张
+      =1：点击跳转第二张
+    -->
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+    </div>
+  </div>
+
+  <!-- 内容容器 -->
+  <div class="content_wrapper">
+    <!-- 关于我们 -->
+    <section class="about_us" id="about_us">
+      <h2 class="title">关于我们</h2>
+
+      <p class="intro">
+        融晟科技是一家专注于 RPA（Robotic Process Automation，即机器人流程自动化）技术咨询与实施的创新型科技企业。我们致力于通过先进的 RPA 解决方案，帮助企业实现流程自动化，提升运营效率，降低人力成本，增强企业的竞争力和创新能力。自成立以来，我们始终秉持着“以客户为中心，以技术为驱动”的理念，为众多行业客户提供专业、高效、可靠的 RPA 服务。
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-lightbulb"></i>
+          <h4 class="feature_title">
+            RPA 咨询规划
+          </h4>
+          <p class="feature_content">
+            深入分析企业业务流程，定制专属 RPA 应用方案，规划自动化实施路径与技术架构。
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-chart-line"></i>
+          <h4 class="feature_title">
+            RPA 实施部署
+          </h4>
+          <p class="feature_content">
+            依托专业团队完成 RPA 系统开发、测试及全流程部署，确保自动化方案高效落地。
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-shopping-cart"></i>
+          <h4 class="feature_title">
+            RPA 培训运维
+          </h4>
+          <p class="feature_content">
+            提供系统化操作培训，建立长效运维机制，保障 RPA 系统稳定运行与持续优化。
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-desktop"></i>
+          <h4 class="feature_title">
+            行业解决方案
+          </h4>
+          <p class="feature_content">
+            针对金融、政务、制造等行业场景，输出适配的 RPA 自动化解决方案，驱动行业效率升级。
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-tachometer-alt"></i>
+          <h4 class="feature_title">
+            流程优化服务
+          </h4>
+          <p class="feature_content">
+            结合 RPA 技术重构企业低效流程，通过自动化手段提升运营效率与质量。
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-server"></i>
+          <h4 class="feature_title">
+            技术集成创新
+          </h4>
+          <p class="feature_content">
+            整合 AI、大数据等技术，探索 RPA 与多技术融合创新应用，拓展自动化边界。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 成功案列 -->
+    <!-- <section class="showcases section_bg" id="showcases">
+      <h2 class="title">成功案例</h2>
+
+      <div class="filter_btns">
+        <button class="filter_btn active" data-filter="*">
+          全部
+        </button>
+        <button class="filter_btn" data-filter=".web">
+          电商
+        </button>
+        <button class="filter_btn" data-filter=".mobile">
+          制造
+        </button>
+        <button class="filter_btn" data-filter=".science">
+          物流
+        </button>
+      </div>
+
+      <div class="cases grid-container">
+        <div class="case_item science hover-effect">
+          <img 
+            src="./images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" 
+            alt="网站开发案例"
+          />
+          <div class="case-overlay">
+            <h3>企业网站开发</h3>
+            <p>基于现代技术栈的响应式网站建设</p>
+          </div>
+        </div>
+
+        <div class="case_item science hover-effect">
+          <img 
+            src="images/photo-of-imac-near-macbook-1029757.jpg" 
+            alt="系统开发案例" 
+          />
+          <div class="case-overlay">
+            <h3>管理系统开发</h3>
+            <p>高效的企业级应用解决方案</p>
+          </div>
+        </div>
+
+        <div class="case_item web hover-effect">
+          <img 
+            src="images/apple-laptop-notebook-office-39284.jpg" 
+            alt="电商平台案例" 
+          />
+          <div class="case-overlay">
+            <h3>电商平台开发</h3>
+            <p>专业的电子商务解决方案</p>
+          </div>
+        </div>
+
+        <div class="case_item web hover-effect">
+          <img
+            src="images/apple-apple-device-design-desk-285814.jpg"
+            alt="设计案例"
+          />
+          <div class="case-overlay">
+            <h3>UI/UX设计</h3>
+            <p>现代简约的界面设计</p>
+          </div>
+        </div>
+
+        <div class="case_item mobile web science hover-effect">
+          <img 
+            src="images/adult-business-computer-contemporary-380769.jpg" 
+            alt="全栈开发案例" 
+          />
+          <div class="case-overlay">
+            <h3>全栈开发项目</h3>
+            <p>完整的技术解决方案</p>
+          </div>
+        </div>
+
+        <div class="case_item mobile hover-effect">
+          <img
+            src="images/person-holding-a-smartphone-892757.jpg"
+            alt="APP开发案例"
+          />
+          <div class="case-overlay">
+            <h3>APP开发设计</h3>
+            <p>创新的移动应用解决方案</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- 服务流程 -->
+    <section class="service" id="service">
+      <h2 class="title">服务流程</h2>
+
+      <p class="intro">
+        聚焦 RPA 技术咨询与实施，为企业提供全周期自动化服务
+      </p>
+
+      <div class="services">
+        <div class="service_item">
+          <i class="fas fa-comments"></i>
+          <h2 class="service_title">需求调研</h2>
+          <p class="service_content">
+            深入对接企业业务部门，收集流程自动化需求，明确业务痛点与目标。
+          </p>
+        </div>
+
+        <div class="service_item">
+          <i class="fas fa-gavel"></i>
+          <h2 class="service_title">方案设计</h2>
+          <p class="service_content">
+            基于调研分析结果，定制 RPA 技术方案，规划开发架构、功能模块与实施路径。
+          </p>
+        </div>
+        <div class="service_item">
+          <i class="fas fa-file-signature"></i>
+          <h2 class="service_title">开发部署</h2>
+          <p class="service_content">
+            依据方案完成 RPA 机器人开发，部署至企业指定环境，确保系统兼容。
+          </p>
+        </div>
+        <div class="service_item">
+          <i class="fas fa-user"></i>
+          <h2 class="service_title">测试优化</h2>
+          <p class="service_content">
+            多场景模拟测试，优化机器人运行逻辑，修复漏洞，提升流程处理稳定性。
+          </p>
+        </div>
+        <div class="service_item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h2 class="service_title">验收培训</h2>
+          <p class="service_content">
+            组织企业验收，交付完整交付物；开展操作培训，确保企业团队掌握 RPA 使用与基础维护。
+          </p>
+        </div>
+        <div class="service_item">
+          <i class="fas fa-user-check"></i>
+          <h2 class="service_title">运维支持</h2>
+          <p class="service_content">
+            提供长效运维服务，实时响应系统问题，持续迭代优化 RPA 应用，助力企业自动化升级。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队介绍 -->
+    <section class="team_intro section_bg" id="team_intro">
+      <!-- <h2 class="title">团队介绍</h2>
+      
+      <div class="team_members">
+        <div class="team_member">
+          <div class="profile_img">
+            <img src="./images/形象照.jpg" alt="">
+          </div>
+
+          <h4 class="name">周杰</h4>
+
+          <p class="position">RPA实施顾问</p>
+
+          <ul class="social_links">
+            <li>
+              <a href="#">
+                <i class="fab fa-weixin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-weibo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team_member">
+          <div class="profile_img">
+            <img src="./images/形象照.jpg" alt="">
+          </div>
+
+          <h4 class="name">傅豪</h4>
+
+          <p class="position">RPA实施顾问</p>
+
+          <ul class="social_links">
+            <li>
+              <a href="#">
+                <i class="fab fa-weixin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-weibo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team_member">
+          <div class="profile_img">
+            <img src="./images/business-woman-2697954_1920.jpg" alt="">
+          </div>
+
+          <h4 class="name">何健</h4>
+
+          <p class="position">RPA工程师</p>
+
+          <ul class="social_links">
+            <li>
+              <a href="#">
+                <i class="fab fa-weixin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-weibo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="team_member">
+          <div class="profile_img">
+            <img src="./images/business-woman-2697954_1920.jpg" alt="">
+          </div>
+
+          <h4 class="name">匡红</h4>
+
+          <p class="position">RPA工程师</p>
+
+          <ul class="social_links">
+            <li>
+              <a href="#">
+                <i class="fab fa-weixin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-weibo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div> -->
+    </section>
+
+    <!-- 数据模块 -->
+    <section class="data_section">
+      <div class="data_piece">
+        <i class="fas fa-code"></i>
+        <div class="num">35210</div>
+        <div class="data_desc">行代码</div>
+      </div>
+
+      <div class="data_piece">
+        <i class="fas fa-award"></i>
+        <div class="num">288</div>
+        <div class="data_desc">个奖项</div>
+      </div>
+
+      <div class="data_piece">
+        <i class="fas fa-laugh-wink"></i>
+        <div class="num">1588</div>
+        <div class="data_desc">位客户</div>
+      </div>
+
+      <div class="data_piece">
+        <i class="fas fa-folder"></i>
+        <div class="num">200</div>
+        <div class="data_desc">个项目</div>
+      </div>
+    </section>
+
+    <!-- 公司动态 -->
+    <section class="company_activities" id="company_activities">
+      <h2 class="title">公司动态</h2>
+      
+      <p class="intro">
+        关注公司动态，第一时间获取一手消息
+      </p>
+
+      <div class="activities">
+        <div class="activity">
+          <div class="act_image_wrapper">
+            <img 
+              src="images/activity01-image.jpg" alt="" 
+            />
+          </div>
+
+          <div class="meta">
+            <!-- 发布日期 -->
+            <p class="date_published">
+              <i class="far fa-calendar"></i> 2025 年 3 月 15 日
+            </p>
+
+            <p class="comments">
+              <i class="far fa-comments"></i> 
+              33条评论
+            </p>
+          </div>
+
+          <!-- 动态标题 -->
+          <h2 class="act_title">
+            RPA 行业解决方案升级发布
+          </h2>
+
+          <!-- 动态内容摘要 -->
+          <article>
+            融晟科技正式发布《制造业 RPA 流程自动化深度解决方案》，针对生产管理、供应链协同等场景，优化机器人流程设计，助力企业降本增效。
+          </article>
+
+          <!-- 阅读更多按钮 -->
+          <button class="readmore_btn">
+            阅读更多
+          </button>
+        </div>
+
+        <div class="activity">
+          <div class="act_image_wrapper">
+            <img 
+              src="images/watercrafts-on-river-3464632.jpg"   
+              alt="" 
+            />
+          </div>
+
+          <div class="meta">
+            <p class="date_published">
+              <i class="far fa-calendar"></i> 2025 年 3 月 10 日
+            </p>
+
+            <p class="comments">
+              <i class="far fa-comments"></i> 
+              33条评论
+            </p>
+          </div>
+
+          <h2 class="act_title">
+            某制造企业 RPA 项目签约
+          </h2>
+
+          <article>
+            与某大型制造企业达成 RPA 项目合作，将为其财务报账、数据录入等流程部署自动化方案，推动企业运营智能化升级。
+          </article>
+
+          <button class="readmore_btn">
+            阅读更多
+          </button>
+        </div>
+
+        <div class="activity">
+          <div class="act_image_wrapper">
+            <img 
+              src="images/red-suspension-bridge-3493772.jpg"  
+              alt="" 
+            />
+          </div>
+
+          <div class="meta">
+            <p class="date_published">
+              <i class="far fa-calendar"></i> 2025 年 3 月 5 日
+            </p>
+
+            <p class="comments">
+              <i class="far fa-comments"></i> 
+              33条评论
+            </p>
+          </div>
+
+          <h2 class="act_title">
+            RPA 技术研讨会圆满举办
+          </h2>
+
+          <article>
+            主办 “RPA 技术创新与应用实践” 研讨会，联合行业专家分享 RPA 与 AI 融合趋势，超 200 家企业参与交流。
+          </article>
+
+          <button class="readmore_btn">
+            阅读更多
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- 底部信息 -->
+  <footer>
+    <div class="footer_menus">
+      <!-- 联系信息 -->
+      <div class="cantact_us">
+        <p class="menu_title">联系我们</p>
+        <p>地址：中国湖南省长沙市芙蓉区嘉雨路与远大一路交界处恒大珺悦府4101号</p>
+        <p>电话：+86 18570405019</p>
+        <p>传真：+86 18570405019</p>
+        <p>电子邮箱：fuhao@risestrong-tech.com</p>
+      </div>
+
+      <!-- 导航菜单 -->
+      <div class="footer_menu service_menu">
+        <p class="menu_title">服务概括</p>
+        <ul class="menu_items">
+          <li><a href="#">RPA实施</a></li>
+          <li><a href="#">企业咨询</a></li>
+          <li><a href="#">教育培训</a></li>
+          <li><a href="#">AI本地部署</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_menu showcase_menu">
+        <p class="menu_title">成功案例</p>
+        <ul class="menu_items">
+          <li><a href="#">财务</a></li>
+          <li><a href="#">电商</a></li>
+          <li><a href="#">制造</a></li>
+          <li><a href="#">物流</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_menu activity_menu">
+        <p class="menu_title">公司动态</p>
+        <ul class="menu_items">
+          <li><a href="#">信息公开</a></li>
+          <li><a href="#">最近新闻</a></li>
+          <!-- <li><a href="#">最新博客</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer_menu help_menu">
+        <p class="menu_title">帮助与支持</p>
+        <ul class="menu_items">
+          <li><a href="#">帮助中心</a></li>
+          <li><a href="#">联系客服</a></li>
+          <li><a href="#">文档资源</a></li>
+        </ul>
+      </div>
+
+      <!-- 备案信息 -->
+      <!-- <p class="icp_info">
+        京ICP备 12345678901-1 号
+      </p> -->
+
+      <!-- 版权信息 -->
+      <p class="rights">
+        &copy; 2025 融晟科技 - 公司官网 版权所有
+      </p>
+
+      <!-- 返回顶部按钮 -->
+      <div class="scrollToTop">
+        <a href="#home">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+  <script src="./libs/anime/anime.min.js"></script>
+  <script src="./libs/glide/glide.min.js"></script>
+  <script src="./libs/isotope/isotope.pkgd.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
